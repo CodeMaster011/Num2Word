@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/num2word", (request, response) => {
-    response.send(capitalizeFirstLetter(inWords(request.query.num) + 'only'));
+    response.send(capitalizeFirstLetter(inWords(request.query.num)));
 });
 
 
